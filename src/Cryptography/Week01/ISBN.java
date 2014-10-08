@@ -1,5 +1,7 @@
 package Cryptography.Week01;
 
+import Cryptography.SharedMethods;
+
 import java.util.Scanner;
 
 /**

@@ -1,22 +1,23 @@
 package Cryptography.Week01;
 
-import java.util.Scanner;
+import Cryptography.SharedMethods;
 
 /**
- * <h1>ISBN Validator</h1>
+ * <h1>Credit Card Validators</h1>
  * Takes a Credit Card number from the user and determines
  * if it is valid or not.
  *
  * @author David Norton
- * @version 1.2
+ * @version 1.3
  * @since 22/09/2014
  */
 public class CreditCard {
 
     public static void main(String[] args) {
 
+        System.out.println("---- Credit Card Validator ----");
         // Get Credit Card Number number
-        String cardNumber = getCardNumber();
+        String cardNumber = SharedMethods.getFixedLengthNumber(16);
 
         // Add Credit Card number to int array
         int[] intArray = SharedMethods.addToArray(cardNumber);
@@ -33,42 +34,6 @@ public class CreditCard {
         // Check if ISBN is valid
         checkIfValid(creditCardMod);
 
-    }
-
-    /**
-     * Gets a Credit Card number from the user.
-     *
-     * @return User input Credit Card number.
-     */
-    private static String getCardNumber() {
-
-        Scanner scan = new Scanner(System.in);
-        String cardNumber = "";
-        boolean validInput = false;
-
-        // Ensure input is valid.
-        while (!validInput) {
-
-            System.out.print("Enter a Credit Card Number (e.g. 4552 7204 1234 5698): ");
-            cardNumber = scan.nextLine();
-
-            // If characters are correct
-            if (cardNumber.matches("([0-9]+)")) {
-
-                // If length is correct
-                if (cardNumber.length() == 16) {
-                    validInput = true;
-                } else {
-                    System.out.print("Invalid input. Ensure the value contains 16 numbers.\n");
-                }
-
-            } else {
-                System.out.print("Invalid input. Contains incorrect characters\n");
-            }
-
-        }
-
-        return cardNumber;
     }
 
     /**
@@ -139,5 +104,4 @@ public class CreditCard {
             System.out.println("------------------------------------");
         }
     }
-
 }
