@@ -5,7 +5,21 @@ package General;
  */
 class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello World!"); // Display the string.
-        System.out.println("Hello World!"); // Display the string.
+
+        int val = 8;
+
+        while (Math.sqrt(val) % 1 != 0 && val < 100) {
+            val += 11;
+        }
+
+        double ans = Math.sqrt(val) % 11;
+
+        if ((ans % 1) == 0) {
+            int x = (int)ans;
+            System.out.print(x);
+        } else {
+            int x = 0;
+            System.out.print(x);
+        }
     }
 }

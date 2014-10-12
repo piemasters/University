@@ -13,7 +13,7 @@ import java.util.Scanner;
  * @version 1.1
  * @since 22/09/2014
  */
-public class ISBN {
+public class ISBN_Validator {
 
     public static void main(String[] args) {
 

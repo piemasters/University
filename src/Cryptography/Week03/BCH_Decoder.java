@@ -1,8 +1,8 @@
 package Cryptography.Week03;
 
 import Cryptography.SharedMethods;
-import Cryptography.Week02.CheckSixDigitNumber;
-import Cryptography.Week02.CheckTenDigitNumber;
+import Cryptography.Week02.BCH_Generator;
+import Cryptography.Week02.Hamming_Generator;
 
 /**
  * <h1>Lecture 03 - Implementing BHC(10,6)</h1>
@@ -13,7 +13,7 @@ import Cryptography.Week02.CheckTenDigitNumber;
  * @version 1.0
  * @since 06/10/2014
  */
-public class DecodeCheckSixDigitNumber {
+public class BCH_Decoder {
 
     public static void main(String[] args) {
 
@@ -42,10 +42,10 @@ public class DecodeCheckSixDigitNumber {
         d10 = intArray[9];
 
         // Get parity bits
-        s1 = CheckTenDigitNumber.getFirstParityBit(d1, d2, d3, d4, d5, d6, d7, d8, d9, d10);
-        s2 = CheckTenDigitNumber.getSecondParityBit(d1, d2, d3, d4, d5, d6, d7, d8, d9, d10);
-        s3 = CheckTenDigitNumber.getThirdParityBit(d1, d2, d3, d4, d5, d6, d7, d8, d9, d10);
-        s4 = CheckTenDigitNumber.getForthParityBit(d1, d2, d3, d4, d5, d6, d7, d8, d9, d10);
+        s1 = BCH_Generator.getFirstParityBit(d1, d2, d3, d4, d5, d6, d7, d8, d9, d10);
+        s2 = BCH_Generator.getSecondParityBit(d1, d2, d3, d4, d5, d6, d7, d8, d9, d10);
+        s3 = BCH_Generator.getThirdParityBit(d1, d2, d3, d4, d5, d6, d7, d8, d9, d10);
+        s4 = BCH_Generator.getForthParityBit(d1, d2, d3, d4, d5, d6, d7, d8, d9, d10);
 
         // Check No Error
         if (s1 == 0 && s2 == 0 && s3 == 0 && s4 == 0) {
@@ -105,7 +105,7 @@ public class DecodeCheckSixDigitNumber {
         //encodedInput = SharedMethods.getFixedLengthNumber(10);
 
         // No Errors
-        //encodedInput = "3745195876";
+        encodedInput = "3745195876";
 
         // Single Errors
         //encodedInput = "3945195876";
@@ -121,7 +121,7 @@ public class DecodeCheckSixDigitNumber {
         //encodedInput = "3745102876";
         //encodedInput = "1145195876";
         //encodedInput = "3745191976";
-        encodedInput = "3745190872";
+        //encodedInput = "3745190872";
 
         // Bigger Error
         //encodedInput = "2745795878";
@@ -145,7 +145,7 @@ public class DecodeCheckSixDigitNumber {
         do {
 
             // Get 6 digit user input and encode it to a 10 digit String.
-            encodedInput = CheckSixDigitNumber.getTenDigitEncodedValue();
+            encodedInput = Hamming_Generator.getTenDigitEncodedValue();
             System.out.println("Encoded Value: " + encodedInput);
 
         } while (encodedInput.equals("Unusable Number"));

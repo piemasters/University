@@ -162,24 +162,18 @@ public class SharedMethods {
      */
     public static int sqrtX(int x) {
 
-        switch (x) {
-            case 1:
-                x = 1;
-                break;
-            case 3:
-                x = 5;
-                break;
-            case 4:
-                x = 2;
-                break;
-            case 5:
-                x = 4;
-                break;
-            case 9:
-                x = 3;
-                break;
-            default:
-                x = 0;
+        // Check if square root is possible.
+        while (Math.sqrt(x) % 1 != 0 && x < 100) {
+            x += 11;
+        }
+
+        double ans = Math.sqrt(x) % 11;
+
+        // Check if integer.
+        if ((ans % 1) == 0) {
+            x = (int)ans;
+        } else {
+            x = 0;
         }
 
         return x;

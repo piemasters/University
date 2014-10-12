@@ -11,7 +11,7 @@ import Cryptography.SharedMethods;
  * @version 1.3
  * @since 22/09/2014
  */
-public class CreditCard {
+public class Credit_Card_Validator {
 
     public static void main(String[] args) {
 
