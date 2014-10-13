@@ -105,11 +105,13 @@ public class BCH_Decoder {
         //encodedInput = SharedMethods.getFixedLengthNumber(10);
 
         // No Errors
-        encodedInput = "3745195876";
+        //encodedInput = "3745195876";
 
         // Single Errors
         //encodedInput = "3945195876";
         //encodedInput = "3645195876";
+        //encodedInput = "3745195877";
+
 
         // Double Errors
         //encodedInput = "8883880744";
@@ -122,12 +124,14 @@ public class BCH_Decoder {
         //encodedInput = "1145195876";
         //encodedInput = "3745191976";
         //encodedInput = "3745190872";
+        //encodedInput = "0745195877";
 
         // Bigger Error
-        //encodedInput = "2745795878";
+        encodedInput = "2745795878";
         //encodedInput = "3742102896";
         //encodedInput = "1115195876";
         //encodedInput = "3121195876";
+        //encodedInput = "0888888074";
 
         return encodedInput;
     }
@@ -401,19 +405,26 @@ public class BCH_Decoder {
         int position = getPosition(s1, s2);
         int magnitude = s1;
 
-        // Get correct bit value
-        intArray[position -1] = getCorrectBitValue(intArray, position, s1);
+        // Special case if position is 0 then there is more than 2 errors.
+        if (position < 1 || position > 10) {
+            outputLargeError(encodedInput, s1, s2, s3, s4, 0, 0, 0);
 
-        // Convert array to String
-        String decodedValue = SharedMethods.convertArrayToString(intArray);
+        } else {
 
-        // Print Result
-        System.out.println("\nEncoded Value: " + encodedInput);
-        System.out.println("Decoded Value: " + decodedValue);
-        System.out.print("Single Error | ");
-        System.out.print("Position [i]: " + position + " | ");
-        System.out.print("Magnitude [a]: " + magnitude  + " | ");
-        System.out.print("Syn (" + s1 + ", " + s2 + ", " + s3 + ", " + s4 + ")");
+            // Get correct bit value
+            intArray[position - 1] = getCorrectBitValue(intArray, position, s1);
+
+            // Convert array to String
+            String decodedValue = SharedMethods.convertArrayToString(intArray);
+
+            // Print Result
+            System.out.println("\nEncoded Value: " + encodedInput);
+            System.out.println("Decoded Value: " + decodedValue);
+            System.out.print("Single Error | ");
+            System.out.print("Position [i]: " + position + " | ");
+            System.out.print("Magnitude [a]: " + magnitude + " | ");
+            System.out.print("Syn (" + s1 + ", " + s2 + ", " + s3 + ", " + s4 + ")");
+        }
     }
 
     /**
@@ -441,23 +452,31 @@ public class BCH_Decoder {
         String decodedValue;
         int position1 = i, magnitude1 = a ,position2 = j ,magnitude2 = b;
 
-        // Get correct bit value
-        intArray[position1 -1] = getCorrectBitValue(intArray, i, a);
-        intArray[position2 -1] = getCorrectBitValue(intArray, j, b);
 
-        // Convert array to String
-        decodedValue = SharedMethods.convertArrayToString(intArray);
+        // Special case if position is 0 then there is more than 2 errors.
+        if ((position1 < 1 || position1 > 10) || (position2 < 1 || position2 > 10)) {
+            outputLargeError(encodedInput, s1, s2, s3, s4, 0, 0, 0);
 
-        // Print Result
-        System.out.println("\nEncoded Value: " + encodedInput);
-        System.out.println("Decoded Value: " + decodedValue);
-        System.out.print("Double Error | ");
-        System.out.print("Position [i]: " + position1 + " | ");
-        System.out.print("Magnitude [a]: " + magnitude1  + " | ");
-        System.out.print("Position [j]: " + position2 + " | ");
-        System.out.print("Magnitude [b]: " + magnitude2  + " | ");
-        System.out.print("Syn (" + s1 + ", " + s2 + ", " + s3 + ", " + s4 + ") | ");
-        System.out.println("pqr (" + p + ", " + q + ", " + r + ")");
+        } else {
+
+            // Get correct bit value
+            intArray[position1 - 1] = getCorrectBitValue(intArray, i, a);
+            intArray[position2 - 1] = getCorrectBitValue(intArray, j, b);
+
+            // Convert array to String
+            decodedValue = SharedMethods.convertArrayToString(intArray);
+
+            // Print Result
+            System.out.println("\nEncoded Value: " + encodedInput);
+            System.out.println("Decoded Value: " + decodedValue);
+            System.out.print("Double Error | ");
+            System.out.print("Position [i]: " + position1 + " | ");
+            System.out.print("Magnitude [a]: " + magnitude1 + " | ");
+            System.out.print("Position [j]: " + position2 + " | ");
+            System.out.print("Magnitude [b]: " + magnitude2 + " | ");
+            System.out.print("Syn (" + s1 + ", " + s2 + ", " + s3 + ", " + s4 + ") | ");
+            System.out.println("pqr (" + p + ", " + q + ", " + r + ")");
+        }
     }
 
     /**
