@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dsa_metafile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://www.cems.uwe.ac.uk/~p-chatterjee/modules/dsa/group_metafile.xsd">
+    <!-- This file is an example of a valid group metadata file. 
+    Use this example file as a template and fill with your own data 
+    validating as you go along using Oxygen or some other schema aware editor -->
+    
+    <!-- The following is the assignment metadata (not to be changed) -->
+    <module id="UFCEKG-20-2" acronymn="DSA">
+        <title>Data Schemas &amp; Applications</title>
+        <year>2013</year>
+        <hand_in>2013-02-28</hand_in>
+        <spec_url>http://www.cems.uwe.ac.uk/~p-chatterjee/2011/dsa/DSA_CW_Spec.html</spec_url>
+    </module>
+    <!-- end of metadata section -->
+    
+    <!-- Group Section -->
+    <group>
+        <member id="10005864" name="David Norton"/>
+        <member id="11004776" name="Hiten Kotecha"/>
+        <member id="11000435" name="Chris Rollin"/>
+        <member id="11029354" name="Greg Huntley"/>
+        <workshop>
+            <daytime>Tuesday 09:00</daytime>
+            <tutor>PC</tutor>
+            <tutor>GW</tutor>
+        </workshop>
+        <!-- Each student should have contributed to one or more components -->
+        <component type="Database Design">
+            <contributor id="10005864"/>
+            <contributor id="11029354"/>
+            <contributor id="11000435"/>
+            <contributor id="11029354"/>
+            <!-- the following text fields allow for between 80 and 300 characters -->
+            <description> First we decided what data was needed to give our site the functionality
+                desired. With the data fields listed, we grouped them into relevant tables and 
+                began constructing relational diagrams. With each diagram repetition was discovered, 
+                requiring us to normalise the data until we reached 3NF.</description>
+            <problems> Discovering all the data fields required in a single meeting was difficult.
+                Visualising how artist and song favorites would be stored was also difficult.
+                Our understand of primary and foreign keys was also lacking.
+            </problems>
+            <solutions> To realise the data fields required, we drew basic diagrams of each planned webpage. 
+                This not only helped with design, but as we added features to each page, we found more data 
+                was required. It also made us start to think about the best way to implement this data. 
+                For example, we soon realised favorited data couldn't be held in either the artist / song 
+                database, or the user database. It had to be accessable to both, so seperate tables are 
+                required. Through research of primary and foreign keys from the lecture slides and online,
+                we formulated a solution using a primary two foreign keys to avoid data duplication.</solutions>
+            <!-- integer required between 1 and 120 -->
+            <hours_effort>8</hours_effort>
+        </component>
+        <component type="Database Implementation">
+            <contributor id="10005864"/>
+            <contributor id="11000435"/>
+            <description> With the design completed, the database could be implemented. We used 
+                phpMyAdmin as it was user friendly and we had a limited knowledge of PHP and 
+                MySQL at this point.</description>
+            <problems> When implementing the database we realised a flaw with our design. This 
+                meant going back a stage to redesign the table structure to avoid further issues. 
+                We were unsure how to connect the tables together via theprimary and foreign keys. 
+                A column of data was also entered incorrectly.</problems>
+            <solutions> When hitting a flaw in the design, we decided the best plan was to stop and 
+                redesign the structure before continuing, otherwise it could waste crucial time. 
+                We decided to implement an ID for each table and use it as a primary key, rather than 
+                using select values, as it ensured there would be no repetition. From reseach online we 
+                discovered the 'Relation View' option on phpMyAdmin, which allowed us to link the tables 
+                together. When dealing with erroneous data, because of our design it was as simple to fix 
+                as swapping two numbers around, as we had songs linking to the wrong albums.</solutions>
+            <hours_effort>9</hours_effort>
+        </component>
+        <component type="HTML Markup">
+            <contributor id="10005864"/>
+            <description> The HTML forms the template for all data to be entered. First a template 
+                had to be created to maintain a uniform apperance throughout the site.</description>
+            <problems> One issue was to create a template in a way that constructing new pages would 
+                not be time consuming. Another was to code it to match neatly with any attached stylesheets 
+                and to display all data in a simple and attractive layout for the user. </problems>
+            <solutions> From rough designs created earlier and a list of the data to be displayed, it was 
+                simply a process of catergorising the data again to form pages holding relevant data. A
+                template was contructed consisting of a body, a top navigation menu and a thin bottom bar
+                to display user specific information. This meant a sidebar was not required, giving the 
+                website a simplictic appearance and left the main body uncluttered. The main content could 
+                then be made purely from articles with asides. The design was created independant to a 
+                stylesheet, meaning the look of the website can be revamped at any point without the need 
+                to change any HTML.</solutions>
+            <hours_effort>16</hours_effort>
+        </component>
+        <component type="PHP Coding">
+            <contributor id="10005864"/>
+            <contributor id="11029354"/>
+            <contributor id="11000435"/>
+            <contributor id="11029354"/>
+            <description> PHP is required by every page and makes up the majority of the websites
+                functionality. It is used with SQL to populate pages with information from the database,
+                allows a user to login or register, play and favorite songs as well as in each of the 
+                teams widgets.</description>
+            <problems>  The first problem was connecting to the database as all other code would be
+                reliant on it. Next was creating the login system, as a lot of the functionality of 
+                the website relys on a user being logged in. We wanted a secure way to store user 
+                passwords and wanted to protect against SQL injection. From here all PHP issues resided
+                in the artist page, getting band information and playing each song.</problems>
+            <solutions> From research online connecting to a database is a pretty systematic procedure,
+                with code appearing very simular across all websites. We seperated this code into seperate 
+                documents to make it easy update and ensured database details could not be changed by another
+                script. Next we used the MD5 function to create hashes of all user passwords and used 
+                a New Boston tutorial as a basis to protect against SQL injection. Getting band info
+                resulted in lots of SQL queries and using PHP to implement the data. Playing songs 
+                involved combining PHP and Javascript to have a 'on click' functionality.</solutions>
+            <hours_effort>50</hours_effort>
+        </component>
+        <component type="Javascript Coding">
+            <contributor id="10005864"/>
+            <description> Javascript was used on the login page to produce a slider effect between the
+                login and register page with the use of jQuery. Another use was make a music player 
+                appear on artist pages when they selected a song to play.</description>
+            <problems> Implementing the Javascript on the login page seemed require some complex code
+                and some matching CSS. How to make a button play a matching song required the use of 
+                multple languages and relied on other scripts.</problems>
+            <solutions> Although the code for the login page would have been complex using pure 
+                Javascript, using jQuery made it much simpler. Having found a tutorial online for 
+                something with a simular effect, being familiar with CSS and Java made learning
+                jQuery relatively simple. I was able to adapt the code reasonably easily to produce the 
+                current login page and also added images to differentiate the user details from the 
+                passwords. To get songs to play on click, the .click method was required. To get the 
+                correct song to play, the Javascript had to be placed within a PHP file so the correct
+                song path was written to the player.</solutions>
+            <hours_effort>10</hours_effort>
+        </component>
+        <component type="CSS Design">
+            <contributor id="10005864"/>
+            <description> CSS makes the website visually appealing to the user so it is important to create 
+                a stylish look, with headers that clearly seperate content, while keeping the website 
+                uniform and making hyperlinks clearly visible. Screen size is another issue.</description>
+            <problems> Producing the Band page thumbnails was a complex process having found a CSS animate
+                class (http://daneden.me/animate/) online which I wanted to implement into the website.
+                Having text hover over images was also new to me, as was having the CSS work differently 
+                depending on the screen size.</problems>
+            <solutions> To produce the band thumnail effect, I had to read through the animate class to 
+                find the style I wanted. This then had to be styled with further CSS to produce the final
+                result. To have text appear over images I had to use relative positioning. This text was 
+                also one of the key areas I focused on when adapting the CSS to different screen sizes, as
+                the text size needed to shrink with the image to keep a constant layout. Originally the
+                idea was to have the page span across the entire screen, to make the most out of large
+                screen sizes. However, this resulted in pages looking empty. To fix this I put a cap on the
+                body width, while the navigation and bottom bar filled the screen width. Sizes were made using
+                percentages so pages would fit smaller screen sizes, and the lines "@media only screen and 
+                (max-width: XXXpx)" were used where regular styles broke down on smaller sized screens. This 
+                worked reasonably well, and the additional of a minimum screen size helped to stop breakages. 
+                I realise most websites are static, but I wanted to experiment so the website would fit on
+                small screens, without peanalizing those with larger screens, merging static and dynamic
+                together.{</solutions>
+            <hours_effort>22</hours_effort>
+        </component>
+    </group>
+    
+    <!-- Individual components are listed here -->
+    <individual id="10005864">
+        <component type="Social Media">
+            <description> I created a widget that uses Flickr's API to display a users photos as a 
+                gallery on the site, each with a title and a snippet of the description. </description>
+            <problems>
+                Originally I was working on creating a feed of the latest articles for the bands we 
+                covered in the site. Unfortunately I was unable to find a feed I was looking for so 
+                I created my own XML file, which the homepage extracts its articles (including 
+                images and videos) from. As this data was not external, I decided to create the 
+                gallery page. This required learning how to use the Flickr API. Finally, once I
+                had the gallery fully functional on mine and several other machines, I uploaded it
+                to my cems hosting space. Unfortunately it does not display, and after discussing it
+                with two of the tutors, it is down to a firewall issue. I discussed the issue with 
+                IT services but was unsuccessful. I have seperated my widget PHP files into a seperate
+                folder and have included an image of the gallery working for your viewing, but cannot
+                bypass the university's firewall.
+            </problems>
+            <solutions>
+                To learn how to go about implementing the gallery I read through the relevant lecture
+                slides and though the Flickr website. I then looked at the app garden to see what
+                others had created. I began writing out some of the functions that I would need using
+                the Flickr API page strongly as reference, making slight modifications. I then looked 
+                online to see how others had brought everything together. I found a couple of tutorials 
+                which helped me put together the final functions and how to display it on the page. From 
+                here it was a matter of reworking my PHP and CSS to create a gallery that fitted nicely 
+                with the page. I added next / previous buttons to the top to scroll through the images and
+                displayed 12 photos, so whether the page size displayed 3 on a row or 2, the number would
+                be even.
+            </solutions>
+            <hours_effort>4</hours_effort>
+        </component>
+    </individual>
+    <individual id="11004776">
+        <component type="Other">
+            <description>
+                This is a widget that gets more information about our artists/bands from the
+                last.fm website. It is then displayed within a slider which scrolls through to 
+                each individual band.
+            </description>
+            <problems>
+                As I did not have a great deal of knownledge about XML and RSS I had to a lot 
+                research. Meaning that the widget is not a "complex" as it could be but it 
+                retrieves the data from an external source and displays it. At first I tried 
+                to develop a widget that got data from a twitter feed of one of the artists 
+                but they have recently changed their API and do not seem to be supporting RSS 
+                anymore. One of the main problems I had was trying to get my PHP to read the 
+                XML document from last.fm whilst developing my final widget. Also, instead of
+                just outputting the text for each individual band I wanted create a slider that
+                allowed them to be encorparted into one "widget".
+            </problems>
+            <solutions>
+                Twitter do have an alternative which essentially allows your to create your own
+                widget from within your profile but I found that this would be simply copy and
+                pasting code hence tried to create my own (But I did include it to add content
+                to the site). In order to figure out how to create such a widget I played around
+                with Yahoo Pipes, and I read several tutorials which linked to my code, these are
+                referenced in the source code comments. Also, I investigated into the last.fm API
+                which was very useful in solving my problem stated above. I found that I was over
+                complicating the retival of the file and hence on require to call it due to having
+                API key and authentication. Due to using sliders before in a previous coursework
+                task and access to several tutorials, I knew rough what I had to do, but the 
+                Javascript required is from source code online, again reference in my sourcecode.
+            </solutions>
+            <hours_effort>4</hours_effort>
+        </component>
+    </individual>
+    <individual id="11029354">
+        <component type="Social Media">
+            <description> The idea for my widget was to grab posts / updates etc. from our 
+                bands Social Network streams and implement them on their page in our site.
+                It has been implemented into Hiten's (11004776) widget to scroll through 
+                each band's page, as it did not fit in each band's page as intended.
+            </description>
+            <problems> The main problem I encountered was the provider sites removing RSS 
+                support in their API’s. Twitter has removed it altogether. They are not 
+                even supporting prehistoric feeds. Facebook try their hardest to make 
+                it difficult. Also, a lack of interest in some sites made the option 
+                unviable. This was particularly true of MySpace despite the recent re-vamp. 
+            </problems>
+            <solutions> My primary instinct was to turn to the web for advice as removal
+                of RSS functionality for these sites is a very recent change and it stood 
+                to reason that others would also be looking for a solution? 
+                As mentioned previously all Twitter RSS feeds are offline however, Facebook 
+                have left support in place for prehistoric arrangements. The process works 
+                by putting the ID for artist page into the following URL: 
+                http://www.facebook.com/feeds/page.php?format=rss20;... 
+                The Open Graph protocol enables any web page to become a rich object in a 
+                social graph. For instance, this is used on Facebook to allow any web page
+                to have the same functionality as any other object on Facebook (http://ogp.me/) 
+                I used facebook’s implementation of the Open Graph protocol to obtain the ID
+                needed to complete the RSS URL. This was simply achieved by adding the page 
+                name to the following URL: https://graph.facebook.com/ For the code, I 
+                registered with https://www.rssinclude.com/. They provide fully customisable
+                RSS widgets in a variety of different languages. I chose php for the easiest
+                integration with our site. 
+            </solutions>
+            <hours_effort>8</hours_effort>
+        </component>
+    </individual>
+    <individual id="11000435">
+        <component type="Map">
+            <description>
+                My widget provides information about a range of venues around the country. It includes an embedded
+                map, from google maps, for each city (Birmingham, London, Bristol and Manchester) with several 
+                different venues included in each map. I also provided a link to each venues website and a short 
+                description of the venues taken from their respective websites. I separated each city into a separate
+                div tag and used a javascript function to swap them out.</description>
+            <problems>
+                The main problem I encountered was how to display the different cities div tags independantly. When I
+                first wrote the widget the data from the separate div tags were interfering and making the layout 
+                confusing for the user.
+                
+                Another problem was formatting the embedded map. There are many parameters in the embed link from 
+                google maps including; the level of zoom, longitude and latitude, language and country that the map 
+                will display when run. Configuring this correctly caused a few problems, mainly with the maps that were 
+                displayed when the page first loaded. The maps had to be dragged to the right place and the zoom adjusted 
+                before anything else could be done.</problems>
+            <solutions>
+                To display the div tags one at a time I adapted a javascript function from www.forum.devshed.com.
+                The script changes the display option for each div depending on which city link was clicked. The city
+                that is clicked has its display set to block and all other cities set to none. This ensures that only 
+                one div is being displayed at once. I also had to set up a default for when the page is originally 
+                loaded, when the script is run for the first time it automatically sets the Birmingham div to block 
+                and all others to none. This removes the problem of having multiple cities displaying on the first 
+                div change.
+                In order to format the maps appropriately I searched the internet for a solution to this problem 
+                and found an instruction apge written by google. It suggested using the map creation tool on google 
+                maps. This tool allows you to create a map using the normal google maps interface and provides and 
+                embed link after the project has been saved. Using this solved most of my problems but there were a 
+                few aspects of the link that I had to manually edit; the zoom level and the longitude and latitude. 
+                The value in the html z=* refers to the level of zoom and the numbers just before refer to the longitude
+                and latitude of the centre of the map. Manually editing these values formatted the map in a much better 
+                way</solutions>
+            <hours_effort>4</hours_effort>
+        </component>
+    </individual>
+    
+    <!-- This section gives a link to 1-2 group components, lists the techohnolgies used and 
+        points to any number of source files. Note that the more that these links work - 
+        the higher the mark for this section. Of course - the base_url link must work!! -->
+    <application>
+        <!-- Make sure the base_url for the main application is reachable as 
+            http://www.cems.uwe.ac.uk/~a-student/dsa/ or something very similar -->
+        <base_url>http://cems.uwe.ac.uk/~d3-norton/</base_url>
+        <!-- a list of up to 8 technologies used (see schema) -->
+        <technologies>
+            <tech>php</tech>
+            <tech>xml</tech>
+            <tech>html5</tech>
+            <tech>css</tech>
+            <tech>javascript</tech>
+            <tech>other</tech>
+        </technologies>
+        <!-- configuration source file if one is used - should be a .phps or .xml -->
+        <config_source></config_source>
+        <!-- URL of the Data Model - could be a HTML page with ann image or a gif file -->
+        <dm_source>http://cems.uwe.ac.uk/~d3-norton/model.gif</dm_source>
+        <source_files>
+            <file>
+                <name>latest.php</name>
+                <purpose>homepage</purpose>
+                <!-- source file should in a browser viewable format (e.g .phps, .xml, .txt, etc.) -->
+                <source_url>http://cems.uwe.ac.uk/~d3-norton/source/latest.phps</source_url>
+            </file>
+            <file>
+                <name>social.php</name>
+                <purpose>Hiten's (id="11004776") and Greg's (id="11029354") Widgets</purpose>
+                <source_url>http://cems.uwe.ac.uk/~d3-norton/source/social.phps</source_url>
+            </file>
+            <file>
+                <name>events.php</name>
+                <purpose>Chris's (id="11000435") Widget</purpose>
+                <source_url>http://cems.uwe.ac.uk/~d3-norton/source/events.phps</source_url>
+            </file>
+            <file>
+                <name>gallery.php</name>
+                <purpose>David's (id="10005864") Widget</purpose>
+                <source_url>http://cems.uwe.ac.uk/~d3-norton/source/gallery.phps</source_url>
+            </file>
+            <file>
+                <name>writearticles.php</name>
+                <purpose>David's (id="10005864") original widget idea, now populates hompage</purpose>
+                <source_url>http://cems.uwe.ac.uk/~d3-norton/source/scripts/writearticles.phps</source_url>
+            </file>
+            <file>
+                <name>login.php</name>
+                <purpose>login page</purpose>
+                <source_url>http://cems.uwe.ac.uk/~d3-norton/source/login.phps</source_url>
+            </file>
+            <file>
+                <name>shinedown.php</name>
+                <purpose>one of several artist page</purpose>
+                <source_url>http://cems.uwe.ac.uk/~d3-norton/source/shinedown.phps</source_url>
+            </file>
+            
+            <file>
+                <name>other.txt</name>
+                <purpose>All source files</purpose>
+                <source_url>http://cems.uwe.ac.uk/~d3-norton/source/files.txt</source_url>
+            </file>
+        </source_files>
+    </application>
+    
+    <!-- something about any learning outcomes achieved and any other overall comments -->
+    <overall_comments> 
+        The HTML, CSS and Database Design was completed with well over a month before the
+        deadline. However, the majority of the code and the database implementation was 
+        all completed in the final two weeks before the deadline. This was due to other
+        assignments before and after christmas, as well as January exams creating too much
+        of a workload to consider this as well. After 5 exams / assignments we were finally 
+        able to put full concentration into this asignment. If we were able to spend more 
+        time we would have the website fixed of all bugs and have everything working as 
+        intended. Despite this we are pleased with the final hand-in having the majority 
+        of tasks complete with some great features that could be implemented into future 
+        projects. As Computer Security and Forensic students we are pleased to have 
+        included MD5 hashes and protected against SQL injection. 
+    </overall_comments>
+</dsa_metafile>
+<!-- DSA Assignment Metadata File Example, 2013 -->
+<!-- author: prakash.chatterjee@uwe.ac.uk -->

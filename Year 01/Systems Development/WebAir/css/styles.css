@@ -1,0 +1,164 @@
+.header {
+	padding: 10px 0 0 0;
+	text-align:center;
+}
+.title {
+	text-align:center;
+	font-family:Tahoma, Geneva, sans-serif;
+	color:rgb(0,0,51);
+	font-size:24px;
+	font-weight:600;
+	font-variant:small-caps;
+	text-decoration:underline;
+
+}
+
+.navigation {
+	text-align:center;
+	font-family:Tahoma, Geneva, sans-serif;
+	color:rgb(0,0,51);
+	font-size:16px;
+	font-weight:600;
+	font-variant:small-caps;
+}
+
+a:link { color:rgb(0,0,51); text-decoration: none }
+a:visited { color:rgb(0,0,51); }
+
+.navigation:hover {
+	text-align:center;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	font-weight:900;
+	font-variant:small-caps;
+	text-shadow: 0 0 20px #c11c1c;
+	box-shadow: 1px 1px 1px #888888;
+}
+
+.body {
+	padding: 15px 60px 15px 8px;
+	background-color:rgb(235,235,235);
+	border-left: 3px solid #000000;	
+  	border-right: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+    border-top: 3px solid #000000;
+	color:#000000;
+}
+
+.text {
+	padding: 15px 15px 15px 15px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size:12px;
+	color:#000000;
+}
+
+
+.bottom {
+	text-align:center;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	font-weight:400;
+	font-variant:small-caps;
+}
+
+.bottom:hover {
+	text-align:center;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	font-weight:700;
+	font-variant:small-caps;
+	text-shadow: 0 0 20px #c11c1c;
+}
+
+.sidebar {
+	padding: 30px 0 0 0;
+	background-image:url(../images/header2.jpg);
+}
+
+#background {
+	min-height:100%;
+	min-width: 100%; 
+    position:fixed;
+	background-repeat:no-repeat;	
+}
+
+.center {
+    text-align:center;
+}
+
+.bold {
+	font-weight:bold;
+}
+	
+table     { border-collapse: collapse; margin-top:10px; border: 4px solid #cbc; text-align:center; margin-left: auto; margin-right: auto; border-radius: 100px;}
+td        { border: 1px solid #cbc; padding: 10px; text-align:center; background-color:rgb(210,210,255);}
+tfoot	  {font-style:italic;}
+th        { border: 2px solid #cbc; padding: 10px; text-align:center; font-weight:bold; font-size:16px;}
+
+.formtitle {
+	padding: 10px; 
+	text-align:center; 
+	font-weight:bold; 
+	font-size:16px;
+}
+
+.Register {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ebebeb;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ebebeb;
+	box-shadow:inset 0px 1px 0px 0px #ebebeb;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ebebeb), color-stop(1, #056f8a) );
+	background:-moz-linear-gradient( center top, #ebebeb 5%, #056f8a 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebebeb', endColorstr='#056f8a');
+	background-color:#ebebeb;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+	display:inline-block;
+	color:#000000;
+	font-family:Trebuchet MS;
+	font-size:18px;
+	font-weight:bold;
+	padding:12px 43px;
+	text-decoration:none;
+	text-shadow:1px 1px 7px #c7cced;
+}.Register:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #056f8a), color-stop(1, #ebebeb) );
+	background:-moz-linear-gradient( center top, #056f8a 5%, #ebebeb 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#056f8a', endColorstr='#ebebeb');
+	background-color:#056f8a;
+}.Register:active {
+	position:relative;
+	top:1px;
+}
+
+.Submit {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ebebeb;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ebebeb;
+	box-shadow:inset 0px 1px 0px 0px #ebebeb;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ebebeb), color-stop(1, #056f8a) );
+	background:-moz-linear-gradient( center top, #ebebeb 5%, #056f8a 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebebeb', endColorstr='#056f8a');
+	background-color:#ebebeb;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+	display:inline-block;
+	color:#000000;
+	font-family:Trebuchet MS;
+	font-size:14px;
+	font-weight:bold;
+	padding:5px 20px;
+	text-decoration:none;
+	text-shadow:1px 1px 7px #c7cced;
+}.Submit:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #056f8a), color-stop(1, #ebebeb) );
+	background:-moz-linear-gradient( center top, #056f8a 5%, #ebebeb 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#056f8a', endColorstr='#ebebeb');
+	background-color:#056f8a;
+}.Submit:active {
+	position:relative;
+	top:1px;
+}
+
+
+

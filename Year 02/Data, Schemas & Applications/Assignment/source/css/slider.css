@@ -1,0 +1,23 @@
+		/*
+
+		Reference: http://slidesjs.com/
+
+		*/		
+
+		.slides_container {
+			width:600px;
+			display: inline-block;
+			margin-left:auto;
+			margin-right:auto;
+		}
+
+		/*
+			Set the width of the slides, 
+			if height not specified height will be set by the slide content
+		*/
+		.slides_container div {
+			/*width:600px;
+			height:600px;*/
+			display:block;
+		}
+

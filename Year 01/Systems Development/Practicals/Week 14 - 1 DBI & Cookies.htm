@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0078)http://www.cems.uwe.ac.uk/~jedawson/modules/uqc103s1/workshops/javascript.html -->
+<HTML><HEAD><TITLE>JavaScript Workshop</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content="Microsoft FrontPage 5.0" name=GENERATOR>
+<META content="Julia Dawson" name=Author>
+<STYLE>H1 {
+	COLOR: red
+}
+H2 {
+	COLOR: brown
+}
+H3 {
+	COLOR: green
+}
+H4 {
+	COLOR: blue
+}
+I {
+	COLOR: red
+}
+EM {
+	COLOR: red
+}
+CODE {
+	COLOR: blue
+}
+TT {
+	COLOR: blue
+}
+</STYLE>
+<meta name="Microsoft Theme" content="indust 011, default">
+</HEAD>
+<BODY background="../_themes/indust/indtextb.jpg" bgcolor="#FFFFFF" text="#663300" link="#990066" vlink="#CC6633" alink="#FFCC00"><!--mstheme--><font face="trebuchet ms,arial,helvetica">&nbsp; <!--mstheme--></font><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <CENTER>
+  <H1><!--mstheme--><font face="Trebuchet MS,Arial,Helvetica"><!--mstheme--><b><b><b><B>UFCE47-20-1</B></b></b><!--mstheme--></font><!--mstheme--></b></H1></CENTER>
+  <CENTER>
+  <H1><!--mstheme--><font face="Trebuchet MS,Arial,Helvetica"><!--mstheme--><b><b><b><B>Systems Development</B></b></b><!--mstheme--></font><!--mstheme--></b></H1></CENTER>
+  <CENTER>
+  <H2><!--mstheme--><font face="Trebuchet MS,Arial,Helvetica">Cookies<!--mstheme--></font></H2></CENTER>
+  <P><BR>&nbsp; <BR>&nbsp; <BR>&nbsp; 
+  <CENTER>
+  <H3><B>Julia Dawson</B></H3></CENTER></table><!--mstheme--><font face="trebuchet ms,arial,helvetica"><!--msthemeseparator--><p align="center"><img src="../_themes/indust/indhorsa.gif" width="600" height="10"></p>
+
+<H3><B>The aim of this worksheet is:</B></H3>
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/indust/indbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td><td valign="top" width="100%"><!--mstheme--><font face="trebuchet ms,arial,helvetica">Deepen your understanding of CGI/Cookies<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/indust/indbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td><td valign="top" width="100%"><!--mstheme--><font face="trebuchet ms,arial,helvetica">Refresh your Perl skills<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/indust/indbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td><td valign="top" width="100%"><!--mstheme--><font face="trebuchet ms,arial,helvetica">Refresh your CGI programming skills<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/indust/indbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td><td valign="top" width="100%"><!--mstheme--><font face="trebuchet ms,arial,helvetica">Encourage you to self-learn by following references to further help <!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/indust/indbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td><td valign="top" width="100%"><!--mstheme--><font face="trebuchet ms,arial,helvetica">Develop the skills required for your assignment <!--mstheme--></font><!--msthemelist--></td></tr>
+<!--msthemelist--></table><!--mstheme--><font face="trebuchet ms,arial,helvetica">
+<H3>
+<!--msthemeseparator--><p align="center"><img src="../_themes/indust/indhorsa.gif" width="600" height="10"></p>
+</H3>
+<H2><!--mstheme--><font face="Trebuchet MS,Arial,Helvetica">Review<!--mstheme--></font></H2>
+<H3>You should make sure that you are familiar with the DBI Cookies lecture 
+notes</H3>
+<H2><!--mstheme--><font face="Trebuchet MS,Arial,Helvetica">References<!--mstheme--></font></H2>
+<P>Make sure you follow the references to further help in the lecture notes and 
+bookmark them. You will definitely find them useful later!</P>
+<!--msthemeseparator--><p align="center"><img src="../_themes/indust/indhorsa.gif" width="600" height="10"></p>
+
+<H2><!--mstheme--><font face="Trebuchet MS,Arial,Helvetica">Exercise 1<!--mstheme--></font></H2>
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/indust/indbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td><td valign="top" width="100%"><!--mstheme--><font face="trebuchet ms,arial,helvetica"><i><b><font color="#008000">REVISION</font></b></i>: Re-do some of the 
+  earlier practicals e.g.<ol>
+    <li>Any Perl practical (the<b><font face="Courier New"> hash.pl</font></b> 
+    may be most useful)</li>
+    <li>Any CGI practical (especially to get the file permissions correct)</li>
+  </ol>
+  <!--mstheme--></font><!--msthemelist--></td></tr>
+<!--msthemelist--></table><!--mstheme--><font face="trebuchet ms,arial,helvetica">
+<H2><!--mstheme--><font face="Trebuchet MS,Arial,Helvetica">Exercise 2<!--mstheme--></font></H2>
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/indust/indbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td><td valign="top" width="100%"><!--mstheme--><font face="trebuchet ms,arial,helvetica">Install and run the Cookie example given in the lecture -
+  <a href="animals.txt">animals</a><!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/indust/indbul2a.gif" width="12" height="12" hspace="15" alt="bullet"></td><td valign="top" width="100%"><!--mstheme--><font face="trebuchet ms,arial,helvetica">Find, read and bookmark the <b><font face="Courier New">CGI.pm</font></b> 
+  library help pages (you'll also need this for your assignment later)<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--></table><!--mstheme--><font face="trebuchet ms,arial,helvetica">
+  <!--mstheme--></font><!--msthemelist--></td></tr>
+<!--msthemelist--></table><!--mstheme--><font face="trebuchet ms,arial,helvetica">
+<H2><!--mstheme--><font face="Trebuchet MS,Arial,Helvetica">Exercise 3<!--mstheme--></font></H2>
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/indust/indbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td><td valign="top" width="100%"><!--mstheme--><font face="trebuchet ms,arial,helvetica">Modify the Animals program to make it look more like a shopping basket.<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/indust/indbul2a.gif" width="12" height="12" hspace="15" alt="bullet"></td><td valign="top" width="100%"><!--mstheme--><font face="trebuchet ms,arial,helvetica">Consider the point raised in the lecture<!--mstheme--></font><!--msthemelist--></td></tr>
+    <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/indust/indbul2a.gif" width="12" height="12" hspace="15" alt="bullet"></td><td valign="top" width="100%"><!--mstheme--><font face="trebuchet ms,arial,helvetica">Personalise the page (colours, images, contact details ...)<!--mstheme--></font><!--msthemelist--></td></tr>
+    <!--msthemelist--><tr><td valign="baseline" width="42"><img src="../_themes/indust/indbul2a.gif" width="12" height="12" hspace="15" alt="bullet"></td><td valign="top" width="100%"><!--mstheme--><font face="trebuchet ms,arial,helvetica">Experiment with the Cookie expiry time.<!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--></table><!--mstheme--><font face="trebuchet ms,arial,helvetica">
+  <!--mstheme--></font><!--msthemelist--></td></tr>
+<!--msthemelist--></table><!--mstheme--><font face="trebuchet ms,arial,helvetica">
+<P><B>Enjoy!</B> 
+<P><B><I><FONT size=-1>I probably don't know the answer ... but I probably know 
+how to find it.</FONT></I></B> <BR><B><FONT size=-1>Workshop written by: <A 
+href="mailto:Julia.Dawson@uwe.ac.uk">Julia Dawson</A></FONT></B> 
+</P><!--mstheme--></font></BODY></HTML>

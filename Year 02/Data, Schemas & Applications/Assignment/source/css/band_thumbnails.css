@@ -1,0 +1,42 @@
+/* =============================================================================
+   Band Thumbnails
+   ========================================================================== */
+   
+.thumbnailWrapper ul {
+	list-style-type: none; /* remove the default style for list items (the circles) */
+	text-align: center;
+
+}
+.thumbnailWrapper ul li {
+	display: inline-block;
+	position:relative; /* so we can use top and left positioning */
+	overflow:hidden; /* hide the content outside the boundaries (ZOOM) */
+	border-radius: 10px;
+	padding: 2%;
+}
+.thumbnailWrapper ul li a img {
+	width: 300px; /* not important, the pics we use here are too big */
+	position:relative; /* so we can use top and left positioning */
+	border:none; /* remove the default blue border */
+}
+.caption{
+	position:absolute; /* needed for positioning */
+	bottom:0px; /* bottom of the list item (container) */
+	left:0px; /* start from left of the list item (container) */
+	width:100%; /* stretch to the whole width of container */
+	display:none; /* hide by default */
+	/* styling bellow */
+	background:rgba(4, 164, 204, 0.7);
+	color:white;
+	font-size: 1.5em;
+    font: bold; 
+}
+.caption .captionInside{
+	/* just styling */
+	padding:10px;
+	margin:0px;
+}
+
+
+
+

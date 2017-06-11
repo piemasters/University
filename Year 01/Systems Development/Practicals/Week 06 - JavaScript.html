@@ -1,0 +1,179 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+   <meta name="Author" content="Julia Dawson">
+   <title>JavaScript Workshop</title>
+<style>
+<!--
+  h1  {color: red}
+  h2  {color: brown}
+  h3  {color: green}
+  h4  {color: blue}
+   i  {color: red}
+  em  {color: red}
+  code{color: blue}
+  tt  {color: blue}
+-->
+   </style>
+</head>
+<body bgcolor="#FFFFFF">
+&nbsp;
+<ul>
+<center>
+<h1>
+<b>U</b>FCE47-20-1</h1></center>
+
+<center>
+<h1>
+<b>Systems Development</b></h1></center>
+
+<center>
+<h2>
+JavaScript</h2></center>
+
+<p>
+&nbsp;
+<center>
+<h3>
+<b>(originally written by Julia Dawson)</b></h3></center>
+</ul>
+
+<hr>
+<h3>
+<b>The aim of this worksheet is:</b></h3>
+
+<ul>
+<li>
+Deepen your understanding of JavaScript</li>
+<li>
+Learn to write simple JavaScripts</li>
+
+<li>
+Encourage you to self-learn by following references to further help</li>
+
+<li>
+Develop the skills required for your assignment</li>
+</ul>
+
+<h3>
+
+<hr></h3>
+
+<h2>
+Review</h2>
+
+<h3>
+You should make sure that you are familiar with the JavaScript
+<a href="lect6_47_20_1.pdf">lecture notes</a>.</h3>
+
+<h2>
+References</h2>
+
+<p>
+Make sure you follow the references to further help in the lecture notes and 
+bookmark them - they you may want to spend some time on them over Xmas.</p>
+
+<hr>
+
+<h2>
+Exercise 1</h2>
+
+<ul>
+  <li>Make an html page in your own web space by copying the first simple example from the lecture note (<code>Mr 
+Pudding says ..</code>). I have saved this HTML file as
+  <a href="javascript/hiThere.html">hiThere.html</a></li>
+  <li>Save the page and give it correct permissions</li>
+  <li>Check that you can load the page into the browser using http: protocol</li>
+  <li>Edit the page to make Mr Pudding tell you how he is feeling today!</li>
+</ul>
+
+<h2>
+Exercise 2</h2>
+
+<ul>
+  <li>Make a page with the next example (<code>Ms 
+Pud speaks ..</code>). Saved as: <a href="javascript/hiThereHead.html">
+  hiThereHead.html</a></li>
+  <li>Check that you can load the page into the browser using <code>http:</code> protocol</li>
+  <li>Write another <b>function</b> called <code>sayHello</code> - when you call
+  <code>sayHello</code> with a name (e.g. <code>Jay</code>) it should write out
+  <code>&quot;Hello</code> <code>Jay&quot;</code></li>
+</ul>
+
+<h2>
+Exercise 3</h2>
+
+<ul>
+  <li>Do the same with the <b>popups</b> example - you will need to save or link 
+  to  image files. You can read the HTML source to find where this image 
+  file is! Saved as: <a href="javascript/popups.html">popups.html</a></li>
+  <li>Check that you can load the page into the browser using <code>http:</code> protocol</li>
+  <li>When you hover the mouse over the image some text appears - where does 
+  this come from? Change this text to read &quot;<code>Click me nicely!</code>&quot;</li>
+  <li>When you click <code>Cancel</code> after being asked to talk the pop box 
+  says <code>Sob ...</code>, instead of this pop up another box saying &quot;<code>I 
+  insist you speak to me!</code>&quot;</li>
+</ul>
+
+<h2>
+Exercise 4</h2>
+
+<ul>
+  <li>Run the rollover example in your own web space- Saved as:
+  <a href="javascript/rollover.html">rollover.html</a></li>
+  <li>Change the images for 2 that you have made or got from elsewhere (they are 
+  MANY free images on the internet - use a search engine)</li>
+</ul>
+
+<h2>
+Exercise 5 (DIFFICULT)</h2>
+
+<ul>
+  <li>Finally - back to the first example - days to xmas... Saved as:
+  <a href="javascript/xmas.html">xmas.html</a></li>
+  <li>Change this so that it calculates how many days to your birthday!</li>
+  <li>What happens if your birthday has already passed this year? After you have 
+  set your birthday 
+
+<p>
+<code>xmas.setFullYear(today.getFullYear());</code></p>
+
+<p>
+you can add the following code to add one to the year if your birthday has 
+already passed!</p>
+
+<p>
+<code>if ( xmas.getTime() &lt; today.getTime() ) {<br>
+&nbsp;
+//xmas has gone this year<br>
+&nbsp;
+xmas.setFullYear(today.getFullYear() +1 );<br>
+}</code></p>
+
+<p>
+Of course, this still refers to Xmas - you will need to change this to refer to 
+your birthday.</p>
+
+  </li>
+</ul>
+
+<h2>
+Also see the online tutorial at: <a href="http://www.w3schools.com/js/">
+http://www.w3schools.com/js/</a></h2>
+
+<h2>
+Playtime</h2>
+
+<p>
+If you want to play with the colors program it is here:
+<a href="javascript/color.html">color.html</a></p>
+
+<p><b>Enjoy!</b>
+<p><b><i><font size=-1>I probably don't know the answer ... but I probably
+know how to find it.</font></i></b>
+<br><b><font size=-1>Workshop written by: <a href="mailto:Julia.Dawson@uwe.ac.uk">Julia
+Dawson</a></font></b>
+</body>
+</html>

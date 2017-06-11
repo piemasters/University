@@ -1,0 +1,9 @@
+ZIP						- A file that can contain one or more files and folders and stores them in a compressed way so they take up less space on a hard drive.
+Encoding				- Transforming data so that it can be read in a certain way.
+Encryption				- Transforming a file so only authorized parties with the correct key can decode and read the original file.
+Base64					- Base 64 is a way to encode data into a character set that can be transmitted without loss or modification of contents.
+Bad Signature			- A file signature is an marker in a files header that confirms the type of file. EnCase checks if this matches the file extensions and outputs results.
+Alternate DataStreams	- A way of allowing files to contain more than one stream of data. Because these files aren't supported in Windows Explorer, the technique is largely used to hide files.
+Volume Slack 			- The space that remains on a hard drive if the partitions do not use all the available space.
+Bad Clusters 			- A section of the hard drive that has been marked as defective, and will no longer respond to read or write requests.
+ 

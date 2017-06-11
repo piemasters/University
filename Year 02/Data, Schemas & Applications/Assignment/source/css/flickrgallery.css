@@ -1,0 +1,71 @@
+/* 
+    References: 
+	- Mikel, phpFlickrGallery, http://www.flickr.com/photos/mikelduke/6428523115/
+	- New Boston, PHP Guides, http://thenewboston.org/list.php?cat=11
+	- NetTuts, How to Create a Photo Gallery using the Flickr API,
+		http://net.tutsplus.com/tutorials/php/how-to-create-a-photo-gallery-using-the-flickr-api/
+	- Flickr, API documentation, http://www.flickr.com/services/api/
+	- DSA Lecture Week 6
+*/
+
+/* =============================================================================
+   Gallery Styles 
+   ========================================================================== */
+
+.flickr_gallery {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.flickr_imagebox {
+  display: inline-block;
+  margin: 1%;
+  padding: 1%;
+  background-color: #BBBBBB;
+  width: 240px;
+  height: 100%;
+  float:left;
+  overflow: hidden;
+}
+.flickr_imagebox img {
+  display: block;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  clear:both;
+  height: 160px;
+  max-width: 240px;
+}
+.flickr_imagebox a {
+  border: none;
+}
+.flickr_imagebox h3 {
+  text-align:none;
+  text-align: center;
+  margin: 0px;
+  font-size: 100%;
+}
+.flickr_gallerynav {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  width: 50%;
+}
+#flickr_prev {
+  float: left;
+  clear: left;
+  font-size: 130%;
+  font-weight: bold;
+}
+
+#flickr_next {
+  float: right;
+  clear: right;
+  font-size: 130%;
+  font-weight: bold;
+}
+.flickr_clear {
+  clear: both;
+}

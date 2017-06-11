@@ -1,0 +1,49 @@
+ROOM
+---------
+int 		roomID
+RoomType()	RoomType(roomType)
+int 		roomNumber
+Calendar()	Calendar(month)
+Calendar()	Calendar(day)
+Calendar()	Calendar(avaliable)
+
+ROOMTYPE
+----------
+int		roomTypeID
+String		roomType
+int		roomPrice
+String		roomDetails
+
+BOOKING
+------------
+int		bookingID
+Room()		Room(roomNumber)
+int		startDay
+String		startMonth
+int		nightsStay
+Customer()	Customer(cutomerName)
+int		reservationNumber
+Boolean		reservationConfirmation
+
+CUSTOMER
+--------------
+int		customerID
+String		cutomerName
+String		customerEmail
+int		cardNumber
+String		cardIssueDate
+String 		CardExpireyDate
+
+CALENDAR
+-------------
+int 		dateID
+String		month
+int		day
+Boolean		avaliable
+
+BOOKED ROOMS
+-------------
+int		bookedRoomsID
+Room()		Room(roomNumber)
+String		month
+int		day

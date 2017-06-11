@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="Cryptography Toolkit - David Norton"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="Title" min="-2" pref="314" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="Message2" min="-2" max="-2" attributes="0"/>
+                          <Component id="Message3" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="Message" max="32767" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="Hamming_Label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="Credit_Card_Label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="ISBN_Label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="BCH_Gen_Label1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="BCH_Gen_Label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="BCH_Dec_Label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="SHA1_Gen_Label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="SHA1_BF_Label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="SHA1_BF2_Label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="BCH_Gen_Input" alignment="1" max="32767" attributes="0"/>
+                                          <Component id="ISBN_Input" alignment="1" max="32767" attributes="0"/>
+                                          <Component id="Credit_Card_Input" alignment="1" max="32767" attributes="0"/>
+                                          <Component id="BCH_Gen_Input1" alignment="1" max="32767" attributes="0"/>
+                                          <Component id="Hamming_Input" alignment="1" max="32767" attributes="0"/>
+                                          <Component id="BCH_Dec_Input" alignment="1" max="32767" attributes="0"/>
+                                          <Component id="SHA1_Gen_Input" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="SHA1_BF_Input" alignment="1" max="32767" attributes="0"/>
+                                          <Component id="SHA1_BF2_Input" alignment="1" pref="279" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Component id="jScrollPane1" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="BCH_Gen_Button1" alignment="0" min="-2" pref="89" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="Hamming_Button" pref="89" max="32767" attributes="0"/>
+                                      <Component id="Credit_Card_Button" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="ISBN_Button" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Component id="BCH_Gen_Button" alignment="0" min="-2" pref="89" max="-2" attributes="0"/>
+                                  <Component id="BCH_Dec_Button" alignment="0" min="-2" pref="89" max="-2" attributes="0"/>
+                                  <Component id="SHA1_Gen_Button" alignment="0" min="-2" pref="89" max="-2" attributes="0"/>
+                                  <Component id="SHA1_BF_Button" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="SHA1_BF2_Button" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Clear_Button" alignment="0" min="-2" pref="89" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+              <Component id="Title" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="Message" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+              <Component id="Message2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="Message3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="ISBN_Input" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ISBN_Button" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ISBN_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="Credit_Card_Input" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Credit_Card_Button" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Credit_Card_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="Hamming_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Hamming_Input" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Hamming_Button" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="BCH_Gen_Label1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="BCH_Gen_Input1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="BCH_Gen_Button1" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="BCH_Gen_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="BCH_Gen_Input" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="BCH_Gen_Button" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="BCH_Dec_Input" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="BCH_Dec_Button" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="BCH_Dec_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="SHA1_Gen_Input" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="SHA1_Gen_Button" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="SHA1_Gen_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="SHA1_BF_Input" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="SHA1_BF_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="SHA1_BF_Button" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="SHA1_BF2_Input" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="SHA1_BF2_Button" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="SHA1_BF2_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="Clear_Button" max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" pref="141" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="Title">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="HelveticaNeueLT Std UltLt" size="36" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Cryptography Toolkit"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="ISBN_Label">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="ISBN Validator:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Credit_Card_Label">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Credit Card Validator:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Hamming_Label">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Hamming(10,6) Generator:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="BCH_Gen_Label">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="BCH(10,6) Generator:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="BCH_Dec_Label">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="BCH(10,6) Decoder:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="SHA1_Gen_Label">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="SHA1 Generator:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="SHA1_BF_Label">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="SHA1 Brute Force:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="SHA1_BF2_Label">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="SHA1 Brute Force (2 ints):"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="ISBN_Input">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0-19-853287-3"/>
+        <Property name="toolTipText" type="java.lang.String" value="Enter an ISBN number"/>
+      </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value=""/>
+      </AccessibilityProperties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="ISBN_Button">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Validate"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ISBN_ButtonMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Credit_Card_Button">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Validate"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Credit_Card_ButtonMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="Credit_Card_Input">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="4485534942318753"/>
+        <Property name="toolTipText" type="java.lang.String" value="Enter a Credit Card number"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="Hamming_Input">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="585676"/>
+        <Property name="toolTipText" type="java.lang.String" value="Enter a 6 digit number"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="Hamming_Button">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Generate"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Hamming_ButtonMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="BCH_Gen_Input">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="000001"/>
+        <Property name="toolTipText" type="java.lang.String" value="Enter a 6 digit number"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="BCH_Gen_Button">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Generate"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BCH_Gen_ButtonMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="BCH_Dec_Input">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2745795878"/>
+        <Property name="toolTipText" type="java.lang.String" value="Enter a 10 digit number"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="BCH_Dec_Button">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Decode"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BCH_Dec_ButtonMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="SHA1_Gen_Input">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="password"/>
+        <Property name="toolTipText" type="java.lang.String" value="Enter a password."/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="SHA1_BF_Input">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="a94a8fe5ccb19ba61c4c0873d391e987982fbbd3"/>
+        <Property name="toolTipText" type="java.lang.String" value="Enter a SHA1 hashed password (Original password must only contain lower case &amp; numeric values. 6 characters maximum."/>
+      </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value="Enter a SHA1 hashed password (40 characters)."/>
+      </AccessibilityProperties>
+    </Component>
+    <Component class="javax.swing.JButton" name="SHA1_Gen_Button">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Generate"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="SHA1_Gen_ButtonMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="SHA1_BF_Button">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Brute Force"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="SHA1_BF_ButtonMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="SHA1_BF2_Input">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="ec8e8ef82a9e9477c1e4e31a8120062ba7ef63c5"/>
+        <Property name="toolTipText" type="java.lang.String" value="Enter a SHA1 hashed password (Original password must only contain lower case &amp; exactly 2 numeric values. 8 characters maximum."/>
+      </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value="Enter a SHA1 hashed password. Original password must contain exactly 2 numeric values (40 characters)."/>
+      </AccessibilityProperties>
+    </Component>
+    <Component class="javax.swing.JButton" name="SHA1_BF2_Button">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Brute Force"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="SHA1_BF2_ButtonMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Message">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Welcome to the Cryptography Toolkit!"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Message2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="To use any of the tools below just enter a valid value, then click the corresponding button."/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Message3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="The result will display at the bottom."/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="Result">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="Clear_Button">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Clear"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Clear_ButtonMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="BCH_Gen_Label1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="BCH(14,10) Generator:"/>
+      </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="BCH(14,0) Generator:"/>
+      </AccessibilityProperties>
+    </Component>
+    <Component class="javax.swing.JButton" name="BCH_Gen_Button1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Generate"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="BCH_Gen_Button1MouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="BCH_Gen_Input1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="8899880747"/>
+        <Property name="toolTipText" type="java.lang.String" value="Enter a 10 digit number"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

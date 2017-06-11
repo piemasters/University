@@ -1,0 +1,63 @@
+/* 
+    Document   : phpFlickrGallery
+    Created on : Nov 26, 2011, 1:55:40 PM
+    Author     : Mikel
+    Description:
+        Stylesheet for phpFlickrGallery styles the image boxes and gallery 
+        section
+*/
+
+root { 
+  display: block;
+}
+.flickr_gallery {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*border: 1px solid;
+  border-color: #000000;*/
+  width: 95%;
+}
+.flickr_imagebox {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  background-color: #BBBBBB;
+  width: 250px;
+  height: 250px;
+  float:left;
+}
+.flickr_imagebox img {
+  display: block;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  clear:both;
+  height: 160px;
+  max-width: 240px;
+}
+.flickr_imagebox a {
+  border: none;
+}
+.flickr_imagebox h4 {
+  text-align: center;
+  margin: 0px;
+}
+.flickr_gallerynav {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  width: 50%;
+}
+#flickr_prev {
+  float: left;
+  clear: left;
+}
+#flickr_next {
+  float: right;
+  clear: right;
+}
+.flickr_clear {
+  clear: both;
+}

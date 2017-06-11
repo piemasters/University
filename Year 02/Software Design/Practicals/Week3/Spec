@@ -1,0 +1,85 @@
+Case Study – UweFlix Cinema Booking System
+
+1. Background and required System Goal
+
+The famous and fictitious UweFlix cinema on Frenchay Campus has a limited ticketing system in place currently. However, to enable customers to place advance bookings, UweFlix Inc. have decided to put in place a Cinema Booking System to complement the current system. The goal of the Cinema Booking system is to enable customers (students, staff and their families) to purchase cinema tickets in advance of the showing electronically.
+ 
+2. Requirements
+
+Initial analysis reveals that System Actors include:
+•	Customer
+•	Cinema Manager
+
+Initial analysis also reveals the following use case scenarios -
+
+(1) Customer scenarios:
+
+Purchase Advance Tickets
+The customer selects a date and is provided with a list of showings for that 
+date, including the time of the showings. The customer selects a showing and 
+is provided with details of the showing, including film title, age rating, 
+duration, and a short trailer description.  The customer then selects the 
+quantity of tickets required, together with the ticket type. Ticket types 
+may be one of student, child, or adult.  The total cost of the booking is 
+supplied to the customer. If the customer is happy, they then confirm their 
+booking request.
+
+If there are insufficient seats available at the showing, the booking request 
+is cancelled and the customer is invited to make a further booking request. If 
+there are sufficient seats, the customer confirms the booking and enters their 
+payment card details, which include card number and expiry date. Payment cards 
+may be one of two types – credit card or payment card. The payment is transacted.  
+
+Collect Tickets
+On entry to the UweFlix cinema, the customer swipes their payment card through 
+an attractive and easy to use swipe / printer device which determines the 
+current booking details for the payment card. If a booking currently exists 
+for the payment card, the swipe / printer device prints the appropriate tickets 
+for the booking. 
+
+
+(2) Cinema Manager scenarios:
+
+Add Film
+The cinema manager adds details of a new film. Film details include Title, Age Rating, Duration, and short trailer description.
+
+Delete Film
+The cinema manager requests to delete details of an obsolete film. The film can only be deleted if there are no showings allocated to it.
+
+Add Screen
+The cinema manager adds details of a new screen in the cinema. Screen details include the capacity of the screen in terms of the numbers of seats.
+
+Add Showing
+The cinema manager adds details of a new showing of a film. Showing details include the date and time of the showing. (Showing details must also be able to record the number of tickets sold against the showing at any time). 
+
+Cancel Showing
+The cinema manager requests to delete a showing. A showing can only be deleted if there are no tickets sold for the showing.
+
+
+3. Your tasks
+
+Your specific task is to design and develop a small simulation program to 
+demonstrate the functionality of the “purchase advance tickets” use case. 
+To test your program, you can use the following data:
+
+
+1.	Ticket Price: The price of dummy tickets shall be as follows:
+Adult 		£5
+Student	£4
+Child		£3
+
+2.	UWEFlix Screens: There shall be three dummy cinema screens with the following properties:
+Id = 1, capacity = 50
+Id = 2, capacity = 75
+Id = 3, capacity = 100
+
+3.	UWEFlix films: There shall be three dummy films with the following properties:
+Id = 1, Title = “Ice Age 4”, Age rating = “U”, Duration = 78 minutes, Description = “Snow, Ice, more snow and ice!”
+Id = 2, Title = “Superman Returns”, Age rating = “12A”, Duration = 154 minutes, Description = “a new chapter in the saga of our superhero”
+Id = 3, Title = “The Hobbit”, Age rating = “15”, Duration = 133 minutes, Description = “Lord of the Rings prequel…”
+
+4.	UWEFlix showings: There shall be three dummy showings with the following properties:
+Id = 1, Month = April, Date = 1st, time = 17:00, Film = “Ice Age 4”, Screen = 1
+Id = 2, Month = April, Date = 1st, time = 19:00, Film = “Superman Returns”, Screen = 2
+Id = 3, Month = April, Date = 1st, time = 19:00, Film = “the Hobbit”, Screen = 3
+
